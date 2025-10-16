@@ -20,3 +20,12 @@ Measures how much more likely the RHS product is purchased when the LHS product 
 
 <img width="962" height="500" alt="image" src="https://github.com/user-attachments/assets/71dd04c0-0dc5-4a6f-9189-ed309e51e8fe" />
 
+# Eclat Algorithm
+ECLAT and Apriori both find frequent itemsets, but the methods differ. Apriori uses a horizontal layout, scans all baskets level by level (breadth-first), and counts itemsets repeatedly. ECLAT uses a vertical layout, keeps a list of baskets for each item, and finds support by intersecting these lists (depth-first). ECLAT only uses support to find frequent itemsets; confidence and lift are only used later for association rules.
+
+Code can be found: https://github.com/taufique-06/ML-AssociationRules/blob/main/eclar.py
+
+## Results
+<img width="458" height="331" alt="image" src="https://github.com/user-attachments/assets/fe732d70-5f51-41ed-a227-2bda7096eacf" />
+
+
